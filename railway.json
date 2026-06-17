@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "cd logistics-app-api && npm install && npm run build && npm run start",
+    "startCommand": "cd logistics-app-api && npm install && npm run build && PORT=$PORT npm run start",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }

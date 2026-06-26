@@ -41,8 +41,7 @@ app.get('/api-check', (_req: Request, res: Response) => {
 })
 // Application REST APIs
 app.use(
-  '/api',
-  // cors(corsOptionsDelegate),
+  '/',
   ondcRoutes,
 )
 app.use(express.json({ limit: '50mb' }))
